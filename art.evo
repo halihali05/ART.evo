@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART.evo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5dc; /* Beige */
+            color: #5c4033; /* Brown */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8f9779; /* Green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #d2b48c; /* Light Brown */
+            padding: 10px;
+        }
+        nav a {
+            color: #5c4033;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .button {
+            background-color: #8f9779;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #6b8e23; /* Darker Green */
+        }
+        .quiz {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .quiz h3 {
+            color: #5c4033;
+        }
+        .quiz label {
+            display: block;
+            margin: 10px 0;
+            color: #5c4033;
+        }
+        .thank-you {
+            padding: 50px;
+            text-align: center;
+            color: #5c4033;
+            background-color: #f5f5dc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to ART.evo</h1>
+        <p>Explore the history of art or learn how to create your own masterpiece!</p>
+    </header>
+    <nav>
+        <a href="#history">Art History</a>
+        <a href="#techniques">Learn Techniques</a>
+        <a href="#quiz">Take a Quiz</a>
+        <a href="#thank-you">Thank You</a>
+    </nav>
+    <div class="container">
+        <h2>What would you like to do?</h2>
+        <button class="button" onclick="location.href='#history'">Learn About Art History</button>
+        <button class="button" onclick="location.href='#techniques'">Learn Art Techniques</button>
+    </div>
+    <div id="quiz" class="container">
+        <h2>Art Quiz</h2>
+        <div class="quiz">
+            <h3>1. Who painted the Mona Lisa?</h3>
+            <label><input type="radio" name="q1" value="a"> A. Vincent van Gogh</label>
+            <label><input type="radio" name="q1" value="b"> B. Pablo Picasso</label>
+            <label><input type="radio" name="q1" value="c"> C. Leonardo da Vinci</label>
+            <label><input type="radio" name="q1" value="d"> D. Claude Monet</label>
+        </div>
+        <div class="quiz">
+            <h3>2. What is the primary medium used in watercolor painting?</h3>
+            <label><input type="radio" name="q2" value="a"> A. Oil</label>
+            <label><input type="radio" name="q2" value="b"> B. Pigment and water</label>
+            <label><input type="radio" name="q2" value="c"> C. Acrylic</label>
+            <label><input type="radio" name="q2" value="d"> D. Pastels</label>
+        </div>
+        <div class="quiz">
+            <h3>3. Which of these is a famous art movement?</h3>
+            <label><input type="radio" name="q3" value="a"> A. Renaissance</label>
+            <label><input type="radio" name="q3" value="b"> B. Baroque</label>
+            <label><input type="radio" name="q3" value="c"> C. Impressionism</label>
+            <label><input type="radio" name="q3" value="d"> D. All of the above</label>
+        </div>
+    </div>
+    <div id="thank-you" class="thank-you">
+        <h2>Thank You for joining our game, until next time!</h2>
+    </div>
+</body>
+</html>
